@@ -125,3 +125,4 @@ dmypy.json
 # CSV files
 *.csv
 archive.zip
+.DS_Store
