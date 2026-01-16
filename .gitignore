@@ -125,4 +125,5 @@ dmypy.json
 # CSV files
 *.csv
 archive.zip
+titanic.zip:Zone.Identifier
 .DS_Store
