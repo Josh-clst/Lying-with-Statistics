@@ -174,6 +174,12 @@ plt.show()
 
 
 # Camembert : pourcentages de survivants hommes, femmes et morts (sur le total des passagers)
+
+male_survived = train_df.loc[(train_df['Sex'] == 'male') & (train_df['Survived'] == 1), 'PassengerId'].count()
+female_survived = train_df.loc[(train_df['Sex'] == 'female') & (train_df['Survived'] == 1), 'PassengerId'].count()
+total_passengers = len(train_df)
+total_survived = train_df['Survived'].sum()
+
 male_pct = male_survived / total_passengers * 100
 female_pct = female_survived / total_passengers * 100
 dead_pct = (total_passengers - total_survived) / total_passengers * 100
